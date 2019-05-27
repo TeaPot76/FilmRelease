@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.film-release-list {
+background-color: yellow;
+}
+.film-release-box {
+ position: absolute;
+ margin-left: 100px;
+ background-color: grey;
+ font-weight: bold;
+ font-size: 20px;
+}

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import FilmReleaseList from "../components/FilmReleaseList";
-
+import Title from "../components/Title";
+import MoreMovies from "../components/MoreMovies";
 class FilmReleaseBox extends Component{
   constructor(props){
     super(props);
@@ -31,15 +32,17 @@ class FilmReleaseBox extends Component{
     name: "Captain Marvel",
     url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
   }
-]
-
-  }
+    ],
+   moreMovies: "https://www.imdb.com/calendar/?region=gb"
+ }
 }
 
   render(){
-    return(<div className ="film-release-box">
-     <h2>Rendering Films</h2>
+    return(
+      <div className ="film-release-box">
+     <Title title = "Recently Released"/>
      <FilmReleaseList data={this.state.data}/>
+     <MoreMovies url={this.state.moreMovies}/>
     </div>
   )
   }

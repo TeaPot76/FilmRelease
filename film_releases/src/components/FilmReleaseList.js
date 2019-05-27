@@ -15,7 +15,7 @@ class FilmReleaseList extends Component{
     return(
 
       <div className="film-release-list">
-      <h4>Printing from list</h4>
+      <h4>List of Films</h4>
       {releaseNodes}
       </div>
     )
